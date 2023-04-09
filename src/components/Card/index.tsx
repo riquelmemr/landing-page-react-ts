@@ -1,19 +1,18 @@
 import React from "react";
-import { CardContainer, IconCard, TitleCard } from "./styles";
-import Computer from "../../../public/assets/img/icon_computer.svg";
+import { CardContainer, CardIcon, DescriptionCard, TitleCard } from "./styles";
 
 interface CardProps {
+  icon: string;
   title: string;
   description: string;
 }
 
-// Criar IconCard dinâmico
-const Card: React.FC<CardProps> = ({ title, description }) => {
+const Card: React.FC<CardProps> = ({ title, description, icon }) => {
   return (
     <CardContainer>
-      <IconCard src={Computer} alt="Computer" /> 
+      <CardIcon src={icon} alt="Card Icon" /> 
       <TitleCard>{title}</TitleCard>
-      <p>{description}</p>
+      <DescriptionCard>{description}</DescriptionCard>
     </CardContainer>
   );
 };

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  width: 350px;
+  width: 400px;
+  height: 220px;
 
   display: flex;
   flex-direction: column;
@@ -10,13 +11,24 @@ export const CardContainer = styled.div`
   gap: 10px;
 `;
 
-export const IconCard = styled.img`
-  width: 100px;
-  color: blue;
-`;
-
 export const TitleCard = styled.h3`
   color: #000000;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
+`;
+
+export const DescriptionCard = styled.p`
+  font-size: 22px;
+  text-align: center;
+  height: 60px;
+`;
+
+interface CardIconProps {
+  src: string;
+}
+
+export const CardIcon = styled.img<CardIconProps>` 
+  src: ${props => props.src};
+  width: 100px;
+  color: #333333;
 `;
