@@ -13,7 +13,7 @@ const Container = styled.div<ContainerProps>`
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
   flex-direction: ${(props) => props.flexDirection || "row"};
-  gap: ${(props) => props.gap && props.gap};
+  gap: ${(props) => props.gap};
 `;
 
 export default Container;
