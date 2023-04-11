@@ -8,8 +8,8 @@ export const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: start;
-`;
 
-export const TitleContent = styled.h3`
-  font-size: 30px;
+  & > h3 {
+    font-size: 30px;
+  }
 `;

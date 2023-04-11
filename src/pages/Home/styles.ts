@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const TitlePage = styled.h1`
-  color: #fff;
+export const Title = styled.h1`
+  color: ${(props) => props.theme.colors.primary};
   font-size: 50px;
 `;
 

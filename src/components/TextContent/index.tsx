@@ -1,10 +1,10 @@
 import React from "react";
-import { TextContainer, TitleContent } from "./styles";
+import { TextContainer } from "./styles";
 
 const TextContent: React.FC = () => {
   return (
     <TextContainer>
-      <TitleContent>Lorem Ipsum</TitleContent>
+      <h3>Lorem Ipsum</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
         provident cum quae doloribus rerum esse reiciendis necessitatibus,

@@ -1,5 +1,6 @@
 import React from "react";
-import { CardContainer, CardIcon, DescriptionCard, TitleCard } from "./styles";
+import { CardContainer, DescriptionCard, TitleCard } from "./styles";
+import Icon from "../Icon";
 
 interface CardProps {
   icon: string;
@@ -10,7 +11,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ title, description, icon }) => {
   return (
     <CardContainer>
-      <CardIcon src={icon} alt="Card Icon" /> 
+      <Icon src={icon} alt="Card Icon" width="100px"/> 
       <TitleCard>{title}</TitleCard>
       <DescriptionCard>{description}</DescriptionCard>
     </CardContainer>
