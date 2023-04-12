@@ -12,7 +12,7 @@ const Banner = styled.img<BannerProps>`
   background-image: url(${({ imageUrl }) => imageUrl});
   background-size: cover;
   background-repeat: no-repeat;
-  position: ${({ position }) => position || "absolute"};
+  position: ${({ position }) => position || "block"};
   z-index: -1;
   height: ${({ height }) => height || "100%"};
   width: ${({ width }) => width || "100%"};
